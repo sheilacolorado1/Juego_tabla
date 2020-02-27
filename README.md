@@ -21,8 +21,11 @@ lo que se necesitaba era posible hacerlo en pequeños archivos, a continuación 
 
 # Estructura del Proyecto:
 -------index.html
+
 -------js.js
+
 -------style.css
+
 
 # Explicación de cada "módulo"
 Escribimos módulo entre comillas, porque realmente son solo archivos, aunque debido a la funcionalidad completa se constituyen
