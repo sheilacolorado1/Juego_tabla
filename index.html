@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerDefault">
+            <p>Introduce un número del 1 al 10</p>
+            <input type="number" id="numeroIntroducidoInput">
+            <button id="intentar">Intentar</button>
+            <p>Numero de intentos:</p>
+            <p id="numeroIntentosP"></p>
+        </div>
+        <div id="fallido" class="containerDefault" style="display:none; border-color:red">
+        <p>Has Fallado</p>
+        </div>
+        <div id="acierto" class="containerDefault" style="border-color:rgb(247, 143, 212); display:none">
+            <p>Has Acertado, ¡Enhorabuena!</p> 
+        </div>
+        <div id="error" class="containerDefault" style="border-color: red; display: none">
+            <p>Por favor, introduce un número del 1 al 10</p>
+        </div> 
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
