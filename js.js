@@ -22,16 +22,18 @@ const numeroIntentosP = document.getElementById('numeroIntentosP')
 const acierto = document.getElementById('acierto')
 const fallido = document.getElementById('fallido')
 const error = document.getElementById('error')
-
+const numeroCorrecto = document.getElementById('numeroCorrecto')
 
 const intentar = document.getElementById('intentar')
 
-
 let intentos = 0
-const numeroSecreto = 4
-let numeroIntroducido = 0
+
 
 intentar.addEventListener('click', function(){
+    numeroCorrecto.innerHTML = ""
+    numeroIntentosP.innerHTML = ""
+    let numeroSecreto = Math.floor(Math.random() * 10) + 1 
+    let numeroIntroducido = 0 
     error.style.display = 'none'
     acierto.style.display = 'none'
     fallido.style.display = 'none'
@@ -39,7 +41,7 @@ intentar.addEventListener('click', function(){
     intentos +=1
     console.log('numeroIntroducido: '+numeroIntroducido)
     console.log('numerosecreto: '+ numeroSecreto)
-    numeroIntentosP.innerHTML = intentos
+    numeroIntentosP.innerText = intentos
     if (numeroIntroducido < 1 || numeroIntroducido > 10){
         error.style.display = 'flex'
     }
@@ -48,6 +50,7 @@ intentar.addEventListener('click', function(){
     }
     else {
         fallido.style.display = 'flex'
+        numeroCorrecto.innerText = numeroSecreto
     }
 })
 
